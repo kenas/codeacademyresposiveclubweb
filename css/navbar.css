@@ -1,18 +1,35 @@
 header {
-    background-image: url('../img/header.png');
+    background-image: url('../img/01B028D5-B7BA-46A2-B36E-0E37849E8926_1_201_a.jpeg'); /* height 737px */
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: 50% 50%;
+    /* background-position: 50% 50%; */
     width: 100%;
-    min-height: 816px;
-    /* min-height: 100dvh; */
-     /* margin-top: 4.375rem; */
+    min-height: 100vh;
+    min-height: 100dvh;
+    margin-top: 4.375rem;   /* 70px */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 
+section.logo {
+    background-color: #ffffff;
+    width: 150px;
+    padding: 30px; 
+    position: absolute;
+    top: -10px;
+    border-radius: 0.8125rem;
 
+}
+
+section.logo img{
+   width: 100%;
+}
 
 nav {
-    height: 816px;
+    height: 43.75rem; /* 700px */
     display: flex;
     align-items: end;
     justify-content: center;
@@ -36,14 +53,15 @@ nav ul.main li a {
     font-size: 1.5rem;
     color: #A8DADC;
     text-decoration: none;
-    padding: 1.6875rem;
+    padding: 2rem;
+    text-transform: uppercase;
 
     
 }
 
 nav ul.main li a:hover {
-    background-color: #ffffff;
-    padding: 1.6875rem;
-    border-radius: 3px 3px 0 0;
+    background-color: #A8DADC;
+    padding: 2rem;
+    border-radius: 3px;
     color: #1D3557;
 }

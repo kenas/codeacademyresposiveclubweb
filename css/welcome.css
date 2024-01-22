@@ -1,0 +1,46 @@
+main {
+  
+}
+
+main h2{
+    font-size: 2rem;
+    color: #1D3557;
+}
+
+main p {
+    font-size: 1rem;
+    line-height: 2;
+    margin: 3.125rem 0;
+}
+
+section.welcome {
+    display: flex;
+    gap: 75px;
+    padding: 10rem 0;
+}
+
+section.left {
+    border-right: 1px solid #A8DADC;
+    padding-right: 75px;
+}
+
+section.right {
+    display: flex;
+    align-items: center;
+    gap: 75px;
+}
+
+div.new-race-text button {
+    text-transform: uppercase;
+    padding: 1.0625rem;
+    border: 0;
+    font-size: 1.5rem;
+    background-color: rgba(29,53,87,0.8);
+    color: #ffffff;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+div.new-race-text button:hover {
+    background-color: rgba(29,53,87,0.6)
+}
