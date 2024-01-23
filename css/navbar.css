@@ -54,8 +54,6 @@ nav ul.main li a {
     padding: 1.6rem;
     text-transform: uppercase;
     transition: background-color 0.3s ease-in-out;
-
-    
 }
 
 nav ul.main li a:hover {
@@ -107,6 +105,15 @@ nav ul.main li a:hover {
 
 /* Mobile */
 @media only screen and (max-width: 425px){
+
+    header nav {
+        height: 40rem;
+    }
+
+    nav ul.main li {
+        padding: 0.3rem;
+    }
+
     section.logo {
         background-color: #ffffff;
         width: 7.5rem;

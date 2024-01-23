@@ -101,11 +101,13 @@ div.new-race-text button:hover {
 
     main h2 {
         margin: 1rem;
+        text-align: center;
     }
 
     main p {
         margin: 1rem;
         font-size: 1.3rem;
+        text-align: center;
     }
 
     section.left {
