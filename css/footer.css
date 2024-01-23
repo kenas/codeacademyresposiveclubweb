@@ -45,9 +45,9 @@ footer nav.footer-menu li a:hover {
 }
 
 footer section.copyright p {
-    font-size: 0.9rem;
+    font-size: 1rem;
     text-align: center;
-    margin: 2rem 0;
+    margin: 2rem 0 0 0;
     opacity: 0.7;
     color: #1D3557;
 }
