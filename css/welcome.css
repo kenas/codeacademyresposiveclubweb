@@ -31,10 +31,6 @@ div.new-race-icon i{
     color: rgba(29,53,87,0.8);
 }
 
-div.new-race-text {
-    /* flex-grow: 4; */
-}
-
 div.new-race-text button {
     text-transform: uppercase;
     padding: 1.0625rem;
@@ -102,5 +98,12 @@ div.new-race-text button:hover {
 
 /* Mobile */
 @media only screen and (max-width: 425px){
+    section.left {
+        padding: 1rem 1rem 0 1rem;
+    }
+
+    div.new-race-text {
+        padding: 1rem;
+    }
     
 }

@@ -26,5 +26,7 @@ section.qoute p::before {
 
 /* Mobile */
 @media only screen and (max-width: 425px){
-    
+    section.qoute {
+        padding: 2rem;
+    }
 }

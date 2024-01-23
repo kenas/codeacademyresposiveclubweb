@@ -46,5 +46,8 @@ section.gallery figure figcaption {
 
 /* Mobile */
 @media only screen and (max-width: 425px){
-    
+    section.gallery {
+        column-count: 1;
+        padding: 2rem;    
+    }
 }
