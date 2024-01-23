@@ -9,17 +9,17 @@ footer div.center {
     align-items: center;
 }
 
-footer .social-media {
+footer div.social-media {
     display: flex;
     gap: 16px;
 }
 
-footer .social-media a {
+footer div.social-media a {
     color: rgba(69, 123, 157, 0.70);
     transition: color 0.3s ease-in-out;
 }
 
-footer .social-media a:hover {
+footer div.social-media a:hover {
     color: rgba(69, 123, 157, 1);
 }
 
@@ -61,7 +61,25 @@ footer nav.footer-menu li a:hover {
 
 /* Tablet */
 @media only screen and (max-width: 768px){
-    
+    footer div.center {
+        flex-direction: column;
+    }
+
+    footer div.social-media {
+        flex-direction: row;
+    }
+    footer nav.footer-menu ul {
+        margin-top: 3rem;
+    }
+
+    footer nav.footer-menu ul li {
+        padding: 1rem 0;
+        text-align: center;
+    }
+
+    footer nav.footer-menu ul {
+        flex-direction: column;
+    }
 }
 
 /* Mobile */

@@ -21,7 +21,6 @@ section.logo {
     position: absolute;
     top: -10px;
     border-radius: 0.8125rem;
-
 }
 
 section.logo img{
@@ -36,7 +35,6 @@ header nav {
 }
 
 nav ul.main {
-
     display: flex;
     padding: 0;
     justify-content: center;
@@ -68,7 +66,38 @@ nav ul.main li a:hover {
 
 /* Laptop */
 @media only screen and (max-width: 1024px){
+    nav ul.main {
+        display: flex;
+        padding: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    nav ul.main li a {
+        font-size: 1.5rem;
+        color: #A8DADC;
+        text-decoration: none;
+        padding: 1.6rem;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease-in-out; 
+        font-weight: bold;       
+    }
     
+    nav ul.main li a:hover {
+        background-color: #A8DADC;
+        border-radius: 3px;
+        color: #1D3557;
+    }
+
+    nav ul.main li {
+        list-style: none;
+        margin: 1rem;
+      }
+
+      main h2 {
+        margin: 2rem;
+      }
 }
 
 /* Tablet */
