@@ -107,5 +107,12 @@ nav ul.main li a:hover {
 
 /* Mobile */
 @media only screen and (max-width: 425px){
-    
+    section.logo {
+        background-color: #ffffff;
+        width: 7.5rem;
+        padding: 1.6rem; 
+        position: absolute;
+        top: -0.625rem;
+        border-radius: 0.8125rem;
+    }
 }
