@@ -1,0 +1,46 @@
+footer {
+    background: rgba(69, 123, 157, 0.60);
+    padding: 3rem;
+}
+
+footer div.center {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .social-media {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+}
+
+footer .social-media a {
+    color: rgba(69, 123, 157, 0.70);
+    transition: color 0.3s ease-in-out;
+}
+
+footer .social-media a:hover {
+    color: rgba(69, 123, 157, 1);
+}
+
+footer nav.footer-menu ul {
+    display: flex;
+}
+
+footer nav.footer-menu li {
+    list-style: none;
+}
+
+footer nav.footer-menu li a {
+    text-decoration: none;
+    color: #1D3557;
+    font-size: 1rem;
+    transition: all 0.2s ease-in-out;
+    padding: 0.7rem;
+}
+
+footer nav.footer-menu li a:hover {
+    color: #1D3557;
+    text-decoration: underline;
+}

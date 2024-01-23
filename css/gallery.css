@@ -21,6 +21,7 @@ section.gallery figure img {
 
 section.gallery figure:hover img {
     opacity: 1;
+    cursor: pointer;
 }
 
 section.gallery figure figcaption {

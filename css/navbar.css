@@ -28,7 +28,7 @@ section.logo img{
    width: 100%;
 }
 
-nav {
+header nav {
     height: 46rem; /* 700px */
     display: flex;
     align-items: end;
@@ -53,15 +53,15 @@ nav ul.main li a {
     font-size: 1.5rem;
     color: #A8DADC;
     text-decoration: none;
-    padding: 1.6875rem;
+    padding: 1.6rem;
     text-transform: uppercase;
+    transition: background-color 0.3s ease-in-out;
 
     
 }
 
 nav ul.main li a:hover {
     background-color: #A8DADC;
-    padding: 1.6875rem;
     border-radius: 3px;
     color: #1D3557;
 }

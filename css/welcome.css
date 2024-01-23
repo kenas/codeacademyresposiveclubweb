@@ -18,6 +18,7 @@ section.welcome {
 section.left {
     border-right: 1px solid #A8DADC;
     padding-right: 75px;
+    flex-shrink: 1;
 }
 
 section.right {
@@ -28,6 +29,10 @@ section.right {
 
 div.new-race-icon i{
     color: rgba(29,53,87,0.8);
+}
+
+div.new-race-text {
+    flex-grow: 4;
 }
 
 div.new-race-text button {

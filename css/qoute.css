@@ -1,0 +1,15 @@
+section.qoute {
+    padding: 6rem;
+}
+
+section.qoute p {
+    text-align: center;
+    font-size: 1.7rem;  
+    font-style: italic;
+    line-height: 4.5rem; /* 200% */
+}
+
+section.qoute p::before {
+    content: '\201c';
+    font-size: 6rem;
+}
