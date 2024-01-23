@@ -33,3 +33,18 @@ section.gallery figure figcaption {
     color: #1D3557;
     font-weight: bold;
 }
+
+/* Laptop */
+@media only screen and (max-width: 1024px){
+    
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+    
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px){
+    
+}

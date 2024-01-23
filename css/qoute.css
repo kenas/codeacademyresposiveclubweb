@@ -13,3 +13,18 @@ section.qoute p::before {
     content: '\201c';
     font-size: 6rem;
 }
+
+/* Laptop */
+@media only screen and (max-width: 1024px){
+    
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+    
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px){
+    
+}

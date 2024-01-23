@@ -32,7 +32,7 @@ div.new-race-icon i{
 }
 
 div.new-race-text {
-    flex-grow: 4;
+    /* flex-grow: 4; */
 }
 
 div.new-race-text button {
@@ -48,4 +48,59 @@ div.new-race-text button {
 
 div.new-race-text button:hover {
     background-color: rgba(29,53,87,0.6)
+}
+
+/* Laptop */
+@media only screen and (max-width: 1024px){
+    section.welcome {
+        display: flex;
+        flex-direction: column;
+        /* gap: 75px; */
+        /* padding: 10rem 0; */
+    }
+
+    section.left {
+        padding: 6rem 6rem 0 6rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    section.right {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 0px;
+    }
+
+    div.new-race-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 6rem;
+    }
+
+    main p {
+        margin: 2rem;
+    }
+
+    section.welcome {
+        padding: 2rem 0;
+    }
+
+    div.new-race-text button {
+        margin: 3rem 0;
+    }
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+    
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px){
+    
 }

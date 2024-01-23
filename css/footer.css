@@ -11,7 +11,6 @@ footer div.center {
 
 footer .social-media {
     display: flex;
-    flex-wrap: wrap;
     gap: 16px;
 }
 
@@ -43,4 +42,29 @@ footer nav.footer-menu li a {
 footer nav.footer-menu li a:hover {
     color: #1D3557;
     text-decoration: underline;
+}
+
+/* Laptop */
+@media only screen and (max-width: 1024px){
+    footer .social-media {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+    }
+
+    section.gallery figure figcaption {
+       padding: 1rem;
+       border-radius: 0;
+    }
+    
+}
+
+/* Tablet */
+@media only screen and (max-width: 768px){
+    
+}
+
+/* Mobile */
+@media only screen and (max-width: 425px){
+    
 }
