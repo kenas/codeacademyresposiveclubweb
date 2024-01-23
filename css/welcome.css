@@ -98,6 +98,16 @@ div.new-race-text button:hover {
 
 /* Mobile */
 @media only screen and (max-width: 425px){
+
+    main h2 {
+        margin: 1rem;
+    }
+
+    main p {
+        margin: 1rem;
+        font-size: 1.3rem;
+    }
+
     section.left {
         padding: 1rem 1rem 0 1rem;
     }
