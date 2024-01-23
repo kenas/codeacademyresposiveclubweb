@@ -15,7 +15,7 @@ section.gallery figure img {
     width: 100%;    
     height: auto;
     border-radius: 1rem;
-    opacity: 0.5;
+    opacity: 0.7;
     transition: opacity 0.3s ease-in-out;
 }
 
