@@ -6,7 +6,7 @@ header {
     width: 100%;
     min-height: 100vh;
     min-height: 100dvh;
-    margin-top: 4.375rem;   /* 70px */
+    margin-top: 4.375rem; 
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -15,11 +15,12 @@ header {
 }
 
 section.logo {
+    position: absolute;
+    top: 0rem;
+    z-index: 1;
     background-color: #ffffff;
     width: 9.375rem;
     padding: 1.875rem; 
-    position: absolute;
-    top: -0.625rem;
     border-radius: 0.8125rem;
 }
 
@@ -27,99 +28,142 @@ section.logo img{
    width: 100%;
 }
 
-header nav {
-    height: 46rem; /* 700px */
+.header-container {
     display: flex;
-    align-items: end;
-    justify-content: center;
-}
-
-nav ul.main {
-    display: flex;
-    padding: 0;
-    justify-content: center;
+    flex-direction: column;
     align-items: center;
-    
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    min-height: 100vh;
+    min-height: 100dvh;
 }
 
-nav ul.main li {
+.header-container > nav {
+    position: absolute;
+    bottom: -5rem;
+    background-color:hsla(182, 43%, 76%, 0.7);
+    width: 100%;
+    padding: 2rem 0rem;
+}
+
+.header-container > nav ul {
+    display: flex;
+    justify-content: center;
+}
+
+.header-container > nav li {
     list-style: none;
-    margin-top: -5rem;
 }
-
-nav ul.main li a {
-    font-size: 1.5rem;
-    color: #A8DADC;
-    text-decoration: none;
-    padding: 1.6rem;
-    text-transform: uppercase;
-    transition: background-color 0.3s ease-in-out;
-}
-
-nav ul.main li a:hover {
-    background-color: #A8DADC;
-    border-radius: 3px;
+.header-container li a {
     color: #1D3557;
+    text-transform: uppercase;
+    padding: 2rem;
+    font-size: 1.2rem;
+    text-decoration: none;
 }
 
-/* Laptop */
-@media only screen and (max-width: 1024px){
-    nav ul.main {
-        display: flex;
-        padding: 0;
-        justify-content: center;
-        align-items: center;
-        flex-direction: column;
-    }
-
-    nav ul.main li a {
-        font-size: 1.5rem;
-        color: #A8DADC;
-        text-decoration: none;
-        padding: 1.6rem;
-        text-transform: uppercase;
-        transition: background-color 0.3s ease-in-out; 
-        font-weight: bold;       
-    }
-    
-    nav ul.main li a:hover {
-        background-color: #A8DADC;
-        border-radius: 3px;
-        color: #1D3557;
-    }
-
-    nav ul.main li {
-        list-style: none;
-        margin: 1rem;
-      }
-
-      main h2 {
-        margin: 2rem;
-      }
+.header-container li a:hover {
+    background-color:  	hsla(215, 50%, 23%, 0.3);
+    transition: all 1s ease-in-out; 
 }
 
-/* Tablet */
-@media only screen and (max-width: 768px){
-    
-}
-
-/* Mobile */
-@media only screen and (max-width: 425px){
-
-    header nav {
-        height: 40rem;
-    }
-
-    nav ul.main li {
-        padding: 0.3rem;
+/* Laptop (max-width: 1024px) */
+@media only screen and (max-width: 1024px) {
+    header {
+        flex-direction: column; /* Maintain column layout */
+        margin-top: 3rem; /* Adjust top margin for smaller screens */
     }
 
     section.logo {
-        background-color: #ffffff;
-        width: 7.5rem;
-        padding: 1.6rem; 
+        width: 8rem; /* Reduce logo size */
+        padding: 1.5rem;
+        top: 1rem; /* Adjust top position */
+    }
+
+    .header-container > nav {
+        position: relative; /* Place nav below the logo */
+        background-color: hsla(182, 43%, 76%, 0.8); /* Slightly darker */
+        bottom: 0; /* Reset bottom positioning */
+        padding: 1.5rem 0;
+    }
+
+    nav ul {
+        flex-direction: column; /* Stack nav items vertically */
+        gap: 1rem;
+    }
+
+    nav ul li a {
+        font-size: 1.3rem; /* Adjust font size */
+        padding: 1rem;
+    }
+}
+
+/* Tablet (max-width: 768px) */
+@media only screen and (max-width: 768px) {
+    header {
+        min-height: 90vh; /* Reduce header height */
+        margin-top: 2rem;
+    }
+
+    section.logo {
+        width: 7rem; /* Adjust logo size */
+        padding: 1.2rem;
+        top: 0.5rem;
+    }
+
+    .header-container > nav {
+        padding: 1rem 0;
+        background-color: hsla(182, 43%, 76%, 0.9); /* Make nav slightly more opaque */
+    }
+
+    nav ul {
+        gap: 0.8rem; /* Reduce spacing between items */
+    }
+
+    nav ul li a {
+        font-size: 1.1rem; /* Further reduce font size */
+        padding: 0.8rem;
+    }
+}
+
+/* Mobile (max-width: 425px) */
+@media only screen and (max-width: 425px) {
+    header {
+        flex-direction: column;
+        min-height: 85vh; /* Reduce header height */
+        margin-top: 1rem;
+    }
+
+    section.logo {
+        width: 6.5rem; /* Smaller logo */
+        padding: 1rem;
+        top: 0; /* Align closer to top */
+    }
+
+    .header-container > nav {
+        padding: 0.8rem 0;
+        height: auto; /* Adjust nav height to content */
         position: absolute;
-        top: -0.625rem;
-        border-radius: 0.8125rem;
+        bottom: -1rem;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 0.5rem;
+    }
+
+    nav ul li {
+        padding: 0.5rem 0;
+    }
+
+    nav ul li a {
+        font-size: 1rem; /* Smaller font for mobile */
+        padding: 0.5rem;
+        text-transform: none; /* Remove uppercase for better readability */
+    }
+
+    nav ul li a:hover {
+        background-color: hsla(215, 50%, 23%, 0.2); /* Subtle hover effect */
     }
 }
